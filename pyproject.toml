@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fju4ek_DS5111su24_lab_01"
+version = "0.0.4"
+authors = [
+  { name="Naomi Ohashi", email="fju4ek@virginia.edu" },
+]
+description = "Lab 6 Python Package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ohashin2G/fju4ek_DS5111su24_lab_01"
+Issues = "https://github.com/ohashin2G/fju4ek_DS5111su24_lab_01/issues"
+
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: marks tests as integration (deselect with '-m \"not integration\"')",
+    "serial",
+]
